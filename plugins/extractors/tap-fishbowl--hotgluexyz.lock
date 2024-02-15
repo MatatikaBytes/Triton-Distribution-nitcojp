@@ -1,0 +1,100 @@
+{
+  "plugin_type": "extractors",
+  "name": "tap-fishbowl",
+  "namespace": "tap_fishbowl",
+  "variant": "hotgluexyz",
+  "label": "Fishbowl",
+  "docs": "https://www.matatika.com/data-details/tap-fishbowl/",
+  "repo": "https://gitlab.com/hotglue/tap-fishbowl",
+  "pip_url": "git+https://gitlab.com/hotglue/tap-fishbowl.git",
+  "executable": "tap-fishbowl",
+  "description": "Fishbowl is a software for inventory management and manufacturing.\n\nFishbowl is an inventory management and manufacturing software that helps businesses of all sizes to manage their inventory, track their products, and automate their manufacturing processes. It offers features such as barcode scanning, order management, shipping integration, and more. Fishbowl also integrates with popular accounting software like QuickBooks, Xero, and Sage, making it easy to manage finances alongside inventory. With Fishbowl, businesses can streamline their operations, reduce errors, and improve their overall efficiency.",
+  "logo_url": "https://app.matatika.com/assets/logos/extractors/fishbowl.png",
+  "capabilities": [
+    "catalog",
+    "discover",
+    "schema-flattening",
+    "state",
+    "stream-maps",
+    "about"
+  ],
+  "settings": [
+    {
+      "name": "app_id",
+      "kind": "password",
+      "label": "App ID",
+      "description": "A unique identifier for the application connecting to the Fishbowl API.",
+      "protected": false
+    },
+    {
+      "name": "app_name",
+      "kind": "string",
+      "label": "App Name",
+      "description": "The name of the application connecting to the Fishbowl API.",
+      "protected": false
+    },
+    {
+      "name": "auth_token",
+      "kind": "password",
+      "label": "Auth Token",
+      "description": "A token used for authentication when connecting to the Fishbowl API.",
+      "protected": false
+    },
+    {
+      "name": "flattening_enabled",
+      "kind": "boolean",
+      "label": "Flattening Enabled",
+      "description": "A boolean value indicating whether or not flattening is enabled for the API connection.",
+      "protected": false
+    },
+    {
+      "name": "flattening_max_depth",
+      "kind": "integer",
+      "label": "Flattening Max Depth",
+      "description": "The maximum depth of the flattened data structure.",
+      "protected": false
+    },
+    {
+      "name": "instance",
+      "kind": "string",
+      "label": "Instance",
+      "description": "The Fishbowl instance to connect to.",
+      "protected": false
+    },
+    {
+      "name": "password",
+      "kind": "password",
+      "label": "Password",
+      "description": "The password for the Fishbowl user account being used to connect to the API.",
+      "protected": false
+    },
+    {
+      "name": "start_date",
+      "kind": "date_iso8601",
+      "label": "Start Date",
+      "description": "The start date for the data being retrieved from the Fishbowl API.",
+      "protected": false
+    },
+    {
+      "name": "stream_map_config",
+      "kind": "object",
+      "label": "Stream Map Config",
+      "description": "The configuration for the stream maps being used in the API connection.",
+      "protected": false
+    },
+    {
+      "name": "stream_maps",
+      "kind": "object",
+      "label": "Stream Maps",
+      "description": "The stream maps being used in the API connection.",
+      "protected": false
+    },
+    {
+      "name": "username",
+      "kind": "string",
+      "label": "Username",
+      "description": "The username for the Fishbowl user account being used to connect to the API.",
+      "protected": false
+    }
+  ]
+}
